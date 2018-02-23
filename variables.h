@@ -3,8 +3,6 @@
 
 #include <array>
 
-// https://www.mathsisfun.com/binary-decimal-hexadecimal-converter.html to convert hex address to decimal
-
 const std::string ak47{"SASWeapons.AK47_Wpn"};
 const std::string ak74{"SASWeapons.AK_74_Wpn"};
 const std::string g3sg1{"SASWeapons.G3SG1_Wpn"};
@@ -24,6 +22,7 @@ const std::string p226{"SASWeapons.Sigp226_Wpn"};
 const std::string aug{"SASWeapons.Steyr_AUG_Wpn"};
 const std::string uzi{"SASWeapons.Uzi_Wpn"};
 
+/*
 struct weaponSlot
 {
     long filePosition;
@@ -55,5 +54,6 @@ const std::array<weaponSlot, 43> terrorists {
 0x0173F5, 25, 0x01754B, 22, 0x0176D4, 20, 0x01783C, 24, 0x0179CC, 19, 0x017B3B, 21, 0x017CC9, 20, 0x017E48, 18, 0x017FE4, 18, // parliment (9)
 0x018445, 25, 0x01859A, 24, 0x018706, 20, 0x01887E, 18, 0x0189E3, 21, 0x018B67, 20, 0x018D0F, 18, 0x018EB3, 25, 0x01902B, 24, 0x0191C1, 18, 0x019351, 20, 0x0194E3, 20 // metro (12)
 };
+*/
 
 #endif // VARIABLES_H
