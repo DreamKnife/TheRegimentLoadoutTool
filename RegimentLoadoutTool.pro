@@ -26,12 +26,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += \
         main.cpp \
         loadouttool.cpp \
-    functions.cpp
+    functions.cpp \
+    weaponslot.cpp
 
 HEADERS += \
         loadouttool.h \
     variables.h \
-    functions.h
+    functions.h \
+    weaponslot.h
 
 FORMS += \
         loadouttool.ui
