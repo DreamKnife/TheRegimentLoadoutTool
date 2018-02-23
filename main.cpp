@@ -5,7 +5,7 @@
 #include <fstream>
 #include <cstdlib> // for rand() and srand()
 #include <ctime> // for time()
-#include "variables.h"
+//#include "variables.h"
 #include "functions.h"
 #include <conio.h>
 

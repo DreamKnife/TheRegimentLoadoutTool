@@ -4,7 +4,7 @@
 //#include <cstdlib>
 #include <iostream>
 #include <fstream>
-#include "variables.h"
+//#include "variables.h"
 
 // Generate a random number between min and max (inclusive)
 // Assumes srand() has already been called
@@ -16,6 +16,8 @@ int getRandomNumber(int min, int max)
     // evenly distribute the random number across our range
     return min + static_cast<int>((max - min + 1) * (rand() * fraction));
 }
+
+/*
 
 // returns random gun as std::string
 std::string getRandomWeapon()
@@ -132,3 +134,5 @@ void assignRandomGun(std::fstream &file, long slotAddress, short slotLength)
             //std::cerr << "Error processing" << file << '\n';
         }
 }
+
+*/

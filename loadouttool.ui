@@ -30,7 +30,17 @@
     </item>
     <item>
      <property name="text">
-      <string>m4</string>
+      <string>m4a1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>mac11</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>m60</string>
      </property>
     </item>
    </widget>
