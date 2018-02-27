@@ -4,8 +4,6 @@
 #include <string>
 #include <fstream>
 
-#include <QMessageBox>
-
 class WeaponSlot
 {
 private:
@@ -15,19 +13,7 @@ private:
     short m_length{0};
 
 public:
-    WeaponSlot(std::string fileName, long filePosition, short length)
-        : m_fileName(fileName), m_filePosition(filePosition), m_length(length)
-    {
-        //m_file.open("C:\\Program Files (x86)\\Konami\\The Regiment\\system\\SASChars.u");
-        m_file.open(fileName);
-
-        // if file fails to open print error
-        if (!m_file)
-        {
-            QMessageBox msgBox(QMessageBox::Critical, "Error", "Error opening SASChars.u  Please confirm this executable is in the same directory as the file SASChars.u.");
-            msgBox.exec();
-        }
-    }
+    WeaponSlot(std::string fileName, long filePosition, short length);
 
     ~WeaponSlot()
     {

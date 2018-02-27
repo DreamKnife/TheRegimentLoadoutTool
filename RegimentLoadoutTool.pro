@@ -27,13 +27,16 @@ SOURCES += \
         main.cpp \
         loadouttool.cpp \
     functions.cpp \
-    weaponslot.cpp
+    weaponslot.cpp \
+    centralwidgetcustom.cpp
 
 HEADERS += \
         loadouttool.h \
     variables.h \
     functions.h \
-    weaponslot.h
+    weaponslot.h \
+    qcomboboxtest.h \
+    centralwidgetcustom.h
 
 FORMS += \
         loadouttool.ui

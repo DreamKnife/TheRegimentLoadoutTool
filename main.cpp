@@ -17,6 +17,7 @@ int main(int argc, char *argv[])
 
     srand(static_cast<unsigned int>(time(0))); // set initial seed value to system clock for random numbers
     getRandomNumber(0, 3); // call getRandomNumber() once and throw away because the first call doesn't seem to come out random
+
     //std::fstream sasGame("C:\\Program Files (x86)\\Konami\\The Regiment\\system\\SASGame.u");
     //std::fstream sasChars("C:\\Program Files (x86)\\Konami\\The Regiment\\system\\SASChars.u");
     //std::fstream sasGame("SASGame.u");
