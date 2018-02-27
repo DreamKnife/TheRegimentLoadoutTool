@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>LoadoutTool</string>
   </property>
-  <widget class="QWidget" name="centralWidget">
+  <widget class="centralWidgetCustom" name="centralWidget">
    <widget class="QComboBox" name="comboBox">
     <property name="geometry">
      <rect>
@@ -66,6 +66,14 @@
   <widget class="QStatusBar" name="statusBar"/>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>centralWidgetCustom</class>
+   <extends>QWidget</extends>
+   <header>centralwidgetcustom.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

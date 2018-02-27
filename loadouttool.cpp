@@ -54,3 +54,4 @@ void LoadoutTool::on_comboBox_activated(int index)
 
     //assignGun(sasGame, defaultMP5.filePosition, defaultMP5.length, chosenWeapon);
 }
+
