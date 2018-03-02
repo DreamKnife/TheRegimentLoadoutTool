@@ -8,12 +8,12 @@ class WeaponSlot
 {
 private:
     std::fstream m_file;
-    std::string m_fileName{"SASChars.u"};
+    std::string m_fileName;
     long m_filePosition{0};
     short m_length{0};
 
 public:
-    WeaponSlot(std::string fileName, long filePosition, short length);
+    WeaponSlot(const std::string &fileName, long filePosition, short length);
 
     ~WeaponSlot()
     {
@@ -21,6 +21,8 @@ public:
     }
 
     void assignGun (const std::string &weapon);
+
+    std::string getGun();
 };
 
 #endif // WEAPONSLOT_H
