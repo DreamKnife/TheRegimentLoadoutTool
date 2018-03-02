@@ -28,7 +28,8 @@ SOURCES += \
         loadouttool.cpp \
     functions.cpp \
     weaponslot.cpp \
-    centralwidgetcustom.cpp
+    centralwidgetcustom.cpp \
+    qcomboboxcustom.cpp
 
 HEADERS += \
         loadouttool.h \
@@ -36,7 +37,8 @@ HEADERS += \
     functions.h \
     weaponslot.h \
     qcomboboxtest.h \
-    centralwidgetcustom.h
+    centralwidgetcustom.h \
+    qcomboboxcustom.h
 
 FORMS += \
         loadouttool.ui
