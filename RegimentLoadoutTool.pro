@@ -36,7 +36,6 @@ HEADERS += \
     variables.h \
     functions.h \
     weaponslot.h \
-    qcomboboxtest.h \
     centralwidgetcustom.h \
     qcomboboxcustom.h
 

@@ -3,6 +3,7 @@
 
 #include <array>
 
+const std::string none{"SASWeapons.Non_Wpn"}; // 18
 const std::string m60{"SASWeapons.M60_Wpn"}; // 18
 const std::string uzi{"SASWeapons.Uzi_Wpn"}; // 18
 const std::string ak47{"SASWeapons.AK47_Wpn"}; // 19
@@ -11,6 +12,7 @@ const std::string ak74{"SASWeapons.AK_74_Wpn"}; // 20
 const std::string g3sg1{"SASWeapons.G3SG1_Wpn"}; // 20
 const std::string mac11{"SASWeapons.MAC11_Wpn"}; // 20
 const std::string socom{"SASWeapons.SOCOM_Wpn"}; // 20
+const std::string m1100{"SASWeapons.M1100_Wpn"}; // 20
 const std::string mp5{"SASWeapons.HK_MP5_Wpn"}; // 21
 const std::string m1100t{"SASWeapons.M1100T_Wpn"}; // 21
 const std::string mp5k{"SASWeapons.HK_MP5K_Wpn"}; // 22
@@ -18,12 +20,20 @@ const std::string sigswat{"SASWeapons.SIGSWAT_Wpn"}; // 22
 const std::string p226{"SASWeapons.Sigp226_Wpn"}; // 22
 const std::string mp5sd{"SASWeapons.HK_MP5_SD_Wpn"}; // 24
 const std::string aug{"SASWeapons.Steyr_AUG_Wpn"}; // 24
+const std::string m9{"SASWeapons.Beretta_m9_Wpn"}; // 25
+const std::string knife{"SASWeapons.CombatKnife_Wpn"}; // 26
+const std::string flash{"SASWeapons.G60_Grenade_Wpn"}; // 26
 const std::string mp5lss{"SASWeapons.HK_MP5_LS_S_Wpn"}; // 26
+const std::string bda{"SASWeapons.Browning_BDA_Wpn"}; // 27
 const std::string mp5klss{"SASWeapons.HK_MP5K_LS_S_Wpn"}; // 27
+const std::string frag{"SASWeapons.L2A2_Grenade_Wpn"}; // 27
 const std::string mp5sdlss{"SASWeapons.HK_MP5SD_LS_S_Wpn"}; // 28
+const std::string gas{"SASWeapons.L13A1_Gas_Grenade_Wpn"}; // 32
 
-const std::array<std::string, 11> weapons{
-    m60, uzi, ak47, m4a1, ak74, g3sg1, mac11, socom, mp5, m1100t, mp5k
+const std::array<std::string, 26> weapons{
+    none, m60, uzi, ak47, m4a1, ak74, g3sg1, mac11, socom, m1100, mp5,
+    m1100t, mp5k, sigswat, p226, mp5sd, aug, m9, knife, flash, mp5lss,
+    bda, mp5klss, frag, mp5sdlss, gas
 };
 
 /*

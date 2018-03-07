@@ -13,8 +13,12 @@ QComboBoxCustom::~QComboBoxCustom()
     //msgBox.exec();
 }
 
-void QComboBoxCustom::slot1()
+void QComboBoxCustom::setCurrentIndexFromWeapon(WeaponSlot &slot)
 {
-    QMessageBox msgBox(QMessageBox::Information, "slot1()", "QComboBoxCustom::slot1()");
-    msgBox.exec();
+    for (int i{0}; i < weapons.size(); ++i)
+    {
+        if (slot.getGun() == weapons[i])
+            this->setCurrentIndex(i);
+    }
 }
+

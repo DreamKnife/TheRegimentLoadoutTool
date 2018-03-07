@@ -4,6 +4,9 @@
 #include <QComboBox>
 #include <QMessageBox>
 
+#include "variables.h"
+#include "weaponslot.h"
+
 class QComboBoxCustom : public QComboBox
 {
     Q_OBJECT
@@ -13,8 +16,7 @@ public:
 
     ~QComboBoxCustom();
 
-public slots:
-    void slot1();
+    void setCurrentIndexFromWeapon(WeaponSlot &slot);
 
 };
 

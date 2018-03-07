@@ -137,7 +137,7 @@ std::string WeaponSlot::getGun()
         // the loop can technically run until the string is as long as the
         // slot itself.
         char currentChar, previousChar;
-        for (int i{1}; i < m_length; ++i, previousChar = currentChar)
+        for (int i{1}; i < m_length + 1; ++i, previousChar = currentChar)
         {
             currentChar = m_file.get();
             tempWeapon.push_back(currentChar);
