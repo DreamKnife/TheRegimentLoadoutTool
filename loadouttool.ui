@@ -6,43 +6,4612 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>994</width>
+    <height>547</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>LoadoutTool</string>
   </property>
   <widget class="centralWidgetCustom" name="centralWidget">
-   <widget class="QComboBox" name="comboBox">
+   <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>80</y>
+      <x>20</x>
+      <y>60</y>
+      <width>191</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Shared Equipment</string>
+    </property>
+    <widget class="QComboBoxCustom" name="cbKnife">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Combat Knife</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_3">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>70</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>P226</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbP226">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>90</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_4">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>120</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>M1100</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbM1100">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>140</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_5">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>170</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>G60 Flash Grenade</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbFlash">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>190</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_6">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>220</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>L2A2 Frag Grenade</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbFrag">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>240</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BDA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>L2A2 Frag Grenade</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_7">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>270</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>L13A1 Gas Grenade</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbGas">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>290</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BDA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>L2A2 Frag Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>L13A1 Gas Grenade</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QComboBoxCustom" name="comboBox">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
       <width>161</width>
       <height>21</height>
      </rect>
     </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;tool tip&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
     <item>
      <property name="text">
-      <string>mp5</string>
+      <string>None</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>m4a1</string>
+      <string>M60</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>mac11</string>
+      <string>Uzi</string>
      </property>
     </item>
     <item>
      <property name="text">
-      <string>m60</string>
+      <string>AK-47</string>
      </property>
     </item>
+    <item>
+     <property name="text">
+      <string>M4A1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>AK-74</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>G3SG1</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MAC-11</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>SOCOM</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>M1100 (slot 4)</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>MP5</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>M1100 (slot 1)</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>161</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Default MP5</string>
+    </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>60</y>
+      <width>181</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>SAS Trooper A</string>
+    </property>
+    <widget class="QComboBoxCustom" name="cbAMp5k">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Embassy 2.&lt;/p&gt;&lt;p&gt;- player in Embassy 3.&lt;/p&gt;&lt;p&gt;- player in Farm 1.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_8">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5K</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_9">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5K LS S</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbAMp5klss">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- player in Embassy 2.&lt;/p&gt;&lt;p&gt;- player and 1 team member in Parliament 1.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BDA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>L2A2 Frag Grenade</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_10">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5SD</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbAMp5sd">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Metro 3.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_11">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5SD SOCOM</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbAMp5sdSocom">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Metro 3.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_12">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5SD LS S</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbAMp5sdlss">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>240</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- player in Metro 2.&lt;/p&gt;&lt;p&gt;- player in Parliament 2.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BDA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>L2A2 Frag Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD LS S</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_13">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5SD LS S SOCOM</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbAMp5sdlssSocom">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- player in Metro 2.&lt;/p&gt;&lt;p&gt;- player in Parliament 2.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_14">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>320</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5 LS S</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbAMp5lss">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>340</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Hostage Handling training.&lt;/p&gt;&lt;p&gt;- player in Farm 3.&lt;/p&gt;&lt;p&gt;- player in Metro 3.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_36">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>370</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5 S</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbAMp5s">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>390</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- player in Farm 2.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_3">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>60</y>
+      <width>181</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>SAS Trooper B</string>
+    </property>
+    <widget class="QComboBoxCustom" name="cbBMp5k">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Embassy 2.&lt;/p&gt;&lt;p&gt;- 1 team member in Embassy 3.&lt;/p&gt;&lt;p&gt;- 1 team member in Farm 1.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_15">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5K</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_16">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5K LS S</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbBMp5klss">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Parliament 1.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BDA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>L2A2 Frag Grenade</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_17">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5SD</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbBMp5sd">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- not used.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_18">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5SD SOCOM</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbBMp5sdSocom">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- not used.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_19">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5SD LS S</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbBMp5sdlss">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>240</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Metro 2.&lt;/p&gt;&lt;p&gt;- 1 team member in Parliament 2.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BDA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>L2A2 Frag Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD LS S</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_20">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5SD LS S SOCOM</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbBMp5sdlssSocom">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Metro 2.&lt;/p&gt;&lt;p&gt;- 1 team member in Parliament 2.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_21">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>320</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5 LS S</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbBMp5lss">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>340</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Hostage Handling training.&lt;/p&gt;&lt;p&gt;- 1 team member in Farm 3.&lt;/p&gt;&lt;p&gt;- 1 team member in Metro 3.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_37">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>370</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5 S</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbBMp5s">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>390</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Farm 2.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>60</y>
+      <width>181</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>SAS Trooper C</string>
+    </property>
+    <widget class="QComboBoxCustom" name="cbCMp5k">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Embassy 3.&lt;/p&gt;&lt;p&gt;- 1 team member in Farm 1.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_22">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5K</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_23">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5K LS S</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbCMp5klss">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- not used.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BDA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>L2A2 Frag Grenade</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_24">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5SD</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbCMp5sd">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- not used.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_25">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5SD SOCOM</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbCMp5sdSocom">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- not used.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_26">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5SD LS S</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbCMp5sdlss">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>240</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Metro 2.&lt;/p&gt;&lt;p&gt;- 1 team member in Parliament 2.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BDA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>L2A2 Frag Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD LS S</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_27">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5SD LS S SOCOM</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbCMp5sdlssSocom">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Metro 2.&lt;/p&gt;&lt;p&gt;- 1 team member in Parliament 2.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_28">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>320</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5 LS S</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbCMp5lss">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>340</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Farm 3.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_38">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>370</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5 S</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbCMp5s">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>390</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Farm 2.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_5">
+    <property name="geometry">
+     <rect>
+      <x>790</x>
+      <y>60</y>
+      <width>181</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>SAS Trooper D</string>
+    </property>
+    <widget class="QComboBoxCustom" name="cbDMp5k">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Embassy 3.&lt;/p&gt;&lt;p&gt;- 1 team member in Farm 1.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_29">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5K</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_30">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5K LS S</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbDMp5klss">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Embassy 2.&lt;/p&gt;&lt;p&gt;- 1 team member in Parliament 1.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BDA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>L2A2 Frag Grenade</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_31">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>120</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5SD</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbDMp5sd">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>140</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- not used.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_32">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>170</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5SD SOCOM</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbDMp5sdSocom">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>190</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- not used.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_33">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>220</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5SD LS S</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbDMp5sdlss">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>240</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Metro 2.&lt;/p&gt;&lt;p&gt;- 1 team member in Parliament 2.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BDA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>L2A2 Frag Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD LS S</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_34">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5SD LS S SOCOM</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbDMp5sdlssSocom">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>290</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Metro 2.&lt;/p&gt;&lt;p&gt;- 1 team member in Parliament 2.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_35">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>320</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5 LS S</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbDMp5lss">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>340</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- player and 1 team member in Hostage Handling training.&lt;/p&gt;&lt;p&gt;- 1 team member in Farm 3.&lt;/p&gt;&lt;p&gt;- 1 team member in Metro 3.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_39">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>370</y>
+       <width>47</width>
+       <height>13</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>MP5 S</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbDMp5s">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>390</y>
+       <width>161</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 1 team member in Farm 2.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -50,7 +4619,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>994</width>
      <height>18</height>
     </rect>
    </property>
@@ -73,7 +4642,18 @@
    <header>centralwidgetcustom.h</header>
    <container>1</container>
   </customwidget>
+  <customwidget>
+   <class>QComboBoxCustom</class>
+   <extends>QComboBox</extends>
+   <header>qcomboboxcustom.h</header>
+   <slots>
+    <slot>slot1()</slot>
+   </slots>
+  </customwidget>
  </customwidgets>
  <resources/>
  <connections/>
+ <slots>
+  <signal>signal1()</signal>
+ </slots>
 </ui>
