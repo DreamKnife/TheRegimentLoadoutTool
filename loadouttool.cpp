@@ -84,7 +84,7 @@ LoadoutTool::LoadoutTool(QWidget *parent) :
 
     // *** Shared Equipment ***
 
-    ui->comboBox->setCurrentIndexFromWeapon(defaultMP5);
+    ui->cbDefaultmp5->setCurrentIndexFromWeapon(defaultMP5);
     ui->cbKnife->setCurrentIndexFromWeapon(defaultKnife);
 
     ui->cbP226->setCurrentIndexFromWeapon(defaultP226);
@@ -149,211 +149,262 @@ LoadoutTool::~LoadoutTool()
 
 }
 
-void LoadoutTool::on_comboBox_activated(int index)
+void LoadoutTool::on_cbDefaultmp5_activated(int index)
 {
     //QTextStream(stdout) << "index " << index << " selected" << endl;
     //QMessageBox msgBox(QMessageBox::Information, "Clicked", "on_comboBox_currentIndexChanged");
     //msgBox.exec();
 
-    defaultMP5.assignGun(weapons[index]);
+    defaultMP5.assignWeapon(weapons[index]);
 }
 
 // *** Shared Equipment ***
 
 void LoadoutTool::on_cbKnife_activated(int index)
 {
-    defaultKnife.assignGun(weapons[index]);
+    defaultKnife.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbP226_activated(int index)
 {
-    defaultP226.assignGun(weapons[index]);
+    defaultP226.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbM1100_activated(int index)
 {
-    defaultM1100.assignGun(weapons[index]);
+    defaultM1100.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbFlash_activated(int index)
 {
-    defaultFlash.assignGun(weapons[index]);
+    defaultFlash.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbFrag_activated(int index)
 {
-    defaultFrag.assignGun(weapons[index]);
+    defaultFrag.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbGas_activated(int index)
 {
-    defaultGas.assignGun(weapons[index]);
+    defaultGas.assignWeapon(weapons[index]);
 }
 
 // *** SAS Trooper A ***
 
 void LoadoutTool::on_cbAMp5k_activated(int index)
 {
-    aMp5k.assignGun(weapons[index]);
+    aMp5k.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbAMp5klss_activated(int index)
 {
-    aMp5klss.assignGun(weapons[index]);
+    aMp5klss.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbAMp5sd_activated(int index)
 {
-    aMp5sd.assignGun(weapons[index]);
+    aMp5sd.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbAMp5sdSocom_activated(int index)
 {
-    aMp5sdSocom.assignGun(weapons[index]);
+    aMp5sdSocom.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbAMp5sdlss_activated(int index)
 {
-    aMp5sdlss.assignGun(weapons[index]);
+    aMp5sdlss.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbAMp5sdlssSocom_activated(int index)
 {
-    aMp5sdlssSocom.assignGun(weapons[index]);
+    aMp5sdlssSocom.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbAMp5lss_activated(int index)
 {
-    aMp5lss.assignGun(weapons[index]);
+    aMp5lss.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbAMp5s_activated(int index)
 {
-    aMp5s.assignGun(weapons[index]);
+    aMp5s.assignWeapon(weapons[index]);
 }
 
 // *** SAS Trooper B ***
 
 void LoadoutTool::on_cbBMp5k_activated(int index)
 {
-    bMp5k.assignGun(weapons[index]);
+    bMp5k.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbBMp5klss_activated(int index)
 {
-    bMp5klss.assignGun(weapons[index]);
+    bMp5klss.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbBMp5sd_activated(int index)
 {
-    bMp5sd.assignGun(weapons[index]);
+    bMp5sd.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbBMp5sdSocom_activated(int index)
 {
-    bMp5sdSocom.assignGun(weapons[index]);
+    bMp5sdSocom.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbBMp5sdlss_activated(int index)
 {
-    bMp5sdlss.assignGun(weapons[index]);
+    bMp5sdlss.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbBMp5sdlssSocom_activated(int index)
 {
-    bMp5sdlssSocom.assignGun(weapons[index]);
+    bMp5sdlssSocom.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbBMp5lss_activated(int index)
 {
-    bMp5lss.assignGun(weapons[index]);
+    bMp5lss.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbBMp5s_activated(int index)
 {
-    bMp5s.assignGun(weapons[index]);
+    bMp5s.assignWeapon(weapons[index]);
 }
 
 // *** SAS Trooper C ***
 
 void LoadoutTool::on_cbCMp5k_activated(int index)
 {
-    cMp5k.assignGun(weapons[index]);
+    cMp5k.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbCMp5klss_activated(int index)
 {
-    cMp5klss.assignGun(weapons[index]);
+    cMp5klss.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbCMp5sd_activated(int index)
 {
-    cMp5sd.assignGun(weapons[index]);
+    cMp5sd.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbCMp5sdSocom_activated(int index)
 {
-    cMp5sdSocom.assignGun(weapons[index]);
+    cMp5sdSocom.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbCMp5sdlss_activated(int index)
 {
-    cMp5sdlss.assignGun(weapons[index]);
+    cMp5sdlss.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbCMp5sdlssSocom_activated(int index)
 {
-    cMp5sdlssSocom.assignGun(weapons[index]);
+    cMp5sdlssSocom.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbCMp5lss_activated(int index)
 {
-    cMp5lss.assignGun(weapons[index]);
+    cMp5lss.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbCMp5s_activated(int index)
 {
-    cMp5s.assignGun(weapons[index]);
+    cMp5s.assignWeapon(weapons[index]);
 }
 
 // *** SAS Trooper D ***
 
 void LoadoutTool::on_cbDMp5k_activated(int index)
 {
-    dMp5k.assignGun(weapons[index]);
+    dMp5k.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbDMp5klss_activated(int index)
 {
-    dMp5klss.assignGun(weapons[index]);
+    dMp5klss.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbDMp5sd_activated(int index)
 {
-    dMp5sd.assignGun(weapons[index]);
+    dMp5sd.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbDMp5sdSocom_activated(int index)
 {
-    dMp5sdSocom.assignGun(weapons[index]);
+    dMp5sdSocom.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbDMp5sdlss_activated(int index)
 {
-    cMp5sdlss.assignGun(weapons[index]);
+    cMp5sdlss.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbDMp5sdlssSocom_activated(int index)
 {
-    dMp5sdlssSocom.assignGun(weapons[index]);
+    dMp5sdlssSocom.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbDMp5lss_activated(int index)
 {
-    dMp5lss.assignGun(weapons[index]);
+    dMp5lss.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbDMp5s_activated(int index)
 {
-    dMp5s.assignGun(weapons[index]);
+    dMp5s.assignWeapon(weapons[index]);
+}
+
+// *** Terrorists ***
+
+void LoadoutTool::on_pbTApply_clicked()
+{
+    std::fstream tempStream (sasChars);
+    //assignWeapon(tempStream, defaultBDA.filePosition, defaultBDA.length, none);
+    //assignWeapon(tempStream, defaultMolotov.filePosition, defaultMolotov.length, none);
+    //tempStream.close();
+    //tempStream.open(sasChars);
+
+    AssignmentResult lastResult;
+    for (int i{0}; i < terrorists.size();)
+    {
+        lastResult = assignWeapon(tempStream, terrorists[i].filePosition, terrorists[i].length, none);
+
+        if (lastResult == AssignmentResult::SUCCESS)
+        {
+            QTextStream(stdout) << "iteration: " << i << " " << hex << terrorists[i].filePosition << " " << terrorists[i].length << '\n';
+            //++i;
+        }
+        ++i; // for testing
+
+
+        /*
+        switch (lastResult)
+        {
+        case AssignmentResult::SUCCESS:
+            QTextStream(stdout) << "iteration: " << i << " " << hex << terrorists[i].filePosition << " " << terrorists[i].length << '\n';
+            ++i;
+            break;
+        case AssignmentResult::INVALIDADDRESS:
+            break;
+        case AssignmentResult::VALUETOOLARGE:
+            break;
+        case AssignmentResult::FILESTREAMERROR:
+            break;
+        }
+        */
+    }
+
+    /*
+    for (auto &element : terrorists)
+    {
+        //QTextStream(stdout) << "iteration" << '\n';
+        assignWeapon(tempStream, element.filePosition, element.length, none);
+    }
+    */
+
+    tempStream.close();
 }

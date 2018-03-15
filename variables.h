@@ -36,6 +36,67 @@ const std::array<std::string, 26> weapons{
     bda, mp5klss, frag, mp5sdlss, gas
 };
 
+const std::array<std::string, 16> terrorPrimaries{
+    m60, uzi, ak47, m4a1, ak74, g3sg1, mac11, mp5, m1100t, mp5k, sigswat,
+    mp5sd, aug, mp5lss, mp5klss, mp5sdlss
+};
+
+const std::array<std::string, 4> terrorSecondaries{
+    socom, p226, m9, bda
+};
+
+const std::array<std::string, 20> terrorBoth{
+    m60, uzi, ak47, m4a1, ak74, g3sg1, mac11, socom, mp5, m1100t, mp5k,
+    sigswat, p226, mp5sd, aug, m9, mp5lss, bda, mp5klss, mp5sdlss
+};
+
+struct terroristWeaponSlot
+{
+    int filePosition;
+    int length;
+};
+
+// SASGame.u
+const terroristWeaponSlot defaultAK47 {0x03126E, 19};
+
+// SASChars.u
+const terroristWeaponSlot defaultBDA {0x70E2, 27};
+const terroristWeaponSlot defaultFragT {0x7103, 31}; // SASWeapons.L2A2_TerrGrenade_Wpn
+const terroristWeaponSlot defaultMolotov {0x7124, 31}; // SASWeapons.Molotov_Cocktail_Wpn
+
+// the weapon slots for terrorists. these are sets of two - the address of the position in the file
+// and the length of the entry
+const std::array<terroristWeaponSlot, 43> terrorists {
+0x01415C, 19, 0x014455, 19, 0x01474E, 22, 0x014A4A, 20, 0x014D44, 18, // scripted embassy (5)
+0x015240, 25, 0x0153E0, 18, 0x01556D, 20, 0x0156EB, 18, 0x015A1F, 22, 0x015BAD, 20, 0x015D4E, 20, 0x015EEB, 21, // embassy (8)
+0x0162DE, 21, 0x016487, 25, 0x016778, 18, 0x0168FF, 21, 0x016A7B, 20, 0x016BF6, 19, 0x016DBB, 20, 0x016F41, 20, 0x0170CE, 18, // farm (9)
+0x0173F5, 25, 0x01754B, 22, 0x0176D4, 20, 0x01783C, 24, 0x0179CC, 19, 0x017B3B, 21, 0x017CC9, 20, 0x017E48, 18, 0x017FE4, 18, // parliment (9)
+0x018445, 25, 0x01859A, 24, 0x018706, 20, 0x01887E, 18, 0x0189E3, 21, 0x018B67, 20, 0x018D0F, 18, 0x018EB3, 25, 0x01902B, 24, 0x0191C1, 18, 0x019351, 20, 0x0194E3, 20 // metro (12)
+};
+
+const std::array<terroristWeaponSlot, 34> terrorSlotPrimaries {
+0x01415C, 19, 0x014455, 19, 0x01474E, 22, 0x014A4A, 20, 0x014D44, 18, // scripted embassy (5)
+0x0153E0, 18, 0x01556D, 20, 0x0156EB, 18, 0x015BAD, 20, 0x015EEB, 21, // embassy (5)
+0x0162DE, 21, 0x016778, 18, 0x0168FF, 21, 0x016A7B, 20, 0x016BF6, 19, 0x016F41, 20, 0x0170CE, 18, // farm (7)
+0x01754B, 22, 0x0176D4, 20, 0x01783C, 24, 0x0179CC, 19, 0x017B3B, 21, 0x017CC9, 20, 0x017E48, 18, 0x017FE4, 18, // parliment (8)
+0x01859A, 24, 0x01887E, 18, 0x0189E3, 21, 0x018B67, 20, 0x018D0F, 18, 0x01902B, 24, 0x0191C1, 18, 0x019351, 20, 0x0194E3, 20 // metro (9)
+};
+
+const std::array<terroristWeaponSlot, 30> terrorSlotSecondaries {
+0x014175, 27, 0x01446E, 27, 0x01476A, 27, 0x014A64, 27, 0x014D5C, 27, // scripted embassy (5)
+0x015240, 25, 0x015A1F, 22, 0x015D4E, 20, // embassy (3)
+0x0162F9, 25, 0x016487, 25, 0x016C0F, 25, 0x016DBB, 20, 0x016F5B, 25, 0x0170E6, 25, // farm (6)
+0x0173F5, 25, 0x017567, 25, 0x01785A, 25, 0x0179E5, 25, 0x017B56, 25, 0x017E60, 25, // parliment (6)
+0x018445, 25, 0x018706, 20, 0x0189FE, 25, 0x018B81, 25, 0x018D27, 25, 0x018EB3, 25, 0x019049, 25, 0x0191D9, 25, 0x01936B, 25, 0x0194FD, 25 // metro (10)
+};
+
+enum class AssignmentResult{
+    SUCCESS,
+    INVALIDADDRESS,
+    VALUETOOLARGE,
+    FILESTREAMERROR
+};
+
 /*
 struct weaponSlot
 {
