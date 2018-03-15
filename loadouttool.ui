@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>994</width>
-    <height>547</height>
+    <width>1191</width>
+    <height>556</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>60</y>
+      <y>160</y>
       <width>191</width>
       <height>331</height>
      </rect>
@@ -34,6 +34,9 @@
        <width>161</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- player and 3 team members in every mission.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <item>
       <property name="text">
@@ -176,6 +179,9 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- player and 3 team members in every mission.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
      <item>
       <property name="text">
        <string>None</string>
@@ -274,6 +280,9 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- player and 3 team members in every mission.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
      <item>
       <property name="text">
        <string>None</string>
@@ -346,6 +355,9 @@
        <width>161</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- player and 3 team members in every mission.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <item>
       <property name="text">
@@ -474,6 +486,9 @@
        <width>161</width>
        <height>21</height>
       </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- player and 3 team members in every mission.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <item>
       <property name="text">
@@ -618,6 +633,9 @@
        <height>21</height>
       </rect>
      </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- player and 3 team members in every mission.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
      <item>
       <property name="text">
        <string>None</string>
@@ -750,17 +768,17 @@
      </item>
     </widget>
    </widget>
-   <widget class="QComboBoxCustom" name="comboBox">
+   <widget class="QComboBoxCustom" name="cbDefaultmp5">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>30</y>
+      <x>30</x>
+      <y>120</y>
       <width>161</width>
       <height>21</height>
      </rect>
     </property>
     <property name="toolTip">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;tool tip&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- 3 team members in Squad Training.&lt;/p&gt;&lt;p&gt;- player and 3 team members in Breaching Procedures training.&lt;/p&gt;&lt;p&gt;- player and 3 team members in Embassy 1.&lt;/p&gt;&lt;p&gt;- player and 3 team members in Metro 1.&lt;/p&gt;&lt;p&gt;- player and 3 team members in Parliament 3.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
     <item>
      <property name="text">
@@ -826,8 +844,8 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
+      <x>30</x>
+      <y>100</y>
       <width>161</width>
       <height>16</height>
      </rect>
@@ -4613,13 +4631,39 @@
      </item>
     </widget>
    </widget>
+   <widget class="QGroupBox" name="groupBox_6">
+    <property name="geometry">
+     <rect>
+      <x>980</x>
+      <y>60</y>
+      <width>191</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Terrorist</string>
+    </property>
+    <widget class="QPushButton" name="pbTApply">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>40</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Apply</string>
+     </property>
+    </widget>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>994</width>
+     <width>1191</width>
      <height>18</height>
     </rect>
    </property>

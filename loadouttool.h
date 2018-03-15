@@ -16,7 +16,7 @@ public:
     ~LoadoutTool();
 
 private slots:
-    void on_comboBox_activated(int index);
+    void on_cbDefaultmp5_activated(int index);
 
     void on_cbKnife_activated(int index);
 
@@ -93,6 +93,8 @@ private slots:
     void on_cbDMp5lss_activated(int index);
 
     void on_cbDMp5s_activated(int index);
+
+    void on_pbTApply_clicked();
 
 private:
     Ui::LoadoutTool *ui;

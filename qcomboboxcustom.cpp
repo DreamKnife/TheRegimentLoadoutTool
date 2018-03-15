@@ -17,7 +17,7 @@ void QComboBoxCustom::setCurrentIndexFromWeapon(WeaponSlot &slot)
 {
     for (int i{0}; i < weapons.size(); ++i)
     {
-        if (slot.getGun() == weapons[i])
+        if (slot.getWeapon() == weapons[i])
             this->setCurrentIndex(i);
     }
 }

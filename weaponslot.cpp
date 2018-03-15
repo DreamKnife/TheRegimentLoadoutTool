@@ -2,16 +2,15 @@
 #include <QMessageBox>
 
 // constructor definition
-WeaponSlot::WeaponSlot(const std::string &fileName, long filePosition, short length)
+WeaponSlot::WeaponSlot(const std::string &fileName, int filePosition, int length)
     : m_fileName(fileName), m_filePosition(filePosition), m_length(length)
 {
 }
 
-// takes a gun slot and fills it with a specific gun
-void WeaponSlot::assignGun (const std::string &weapon)
+// takes a weapon slot and fills it with a specific weapon
+void WeaponSlot::assignWeapon (const std::string &weapon)
 {
 
-    //m_file.open("C:\\Program Files (x86)\\Konami\\The Regiment\\system\\SASChars.u");
     m_file.open(m_fileName);
 
     // if file fails to open print error - two possibilities depending on which file
@@ -53,7 +52,7 @@ void WeaponSlot::assignGun (const std::string &weapon)
         // if slot address is less than or equal to 0 it's definitely invalid, report an error and back out
         if (m_filePosition <= 0)
         {
-            QMessageBox msgBox(QMessageBox::Critical, "Error", "Error: Invalid file address passed to assignGun().");
+            QMessageBox msgBox(QMessageBox::Critical, "Error", "Error: Invalid file address passed to assignWeapon().");
             msgBox.exec();
             m_file.close();
             return;
@@ -62,7 +61,7 @@ void WeaponSlot::assignGun (const std::string &weapon)
         // if the weapon passed in is too big for the slot print error and return
         if (weapon.length() > m_length)
         {
-            QMessageBox msgBox(QMessageBox::Critical, "Error", "Error: Weapon passed to assignGun() is too large.");
+            QMessageBox msgBox(QMessageBox::Critical, "Error", "Error: Weapon passed to assignWeapon() is too large.");
             msgBox.exec();
             m_file.close();
             return;
@@ -71,11 +70,11 @@ void WeaponSlot::assignGun (const std::string &weapon)
         m_file.seekg(m_filePosition, std::ios::beg);
         std::string tempWeapon{weapon};
 
-        short lengthDifference{m_length - tempWeapon.length()}; // calculate length difference
+        int lengthDifference{m_length - tempWeapon.length()}; // calculate length difference
 
         // add empty spaces to the weapon as many times as needed to match the length
         // of the slot it's going to fill
-        for (short i{0}; i < lengthDifference; ++i)
+        for (int i{0}; i < lengthDifference; ++i)
         {
             tempWeapon.push_back(0x00);
         }
@@ -88,12 +87,12 @@ void WeaponSlot::assignGun (const std::string &weapon)
 
     // something went wrong with the file stream
     // PROBABLY NEED BETTER ERROR MESSAGE HERE, MORE SPECIFIC
-    QMessageBox msgBox(QMessageBox::Critical, "Error", "Error while assigning gun.");
+    QMessageBox msgBox(QMessageBox::Critical, "Error", "Error while assigning weapon.");
     msgBox.exec();
 }
 
-// reads and returns the current gun in the slot
-std::string WeaponSlot::getGun()
+// reads and returns the current weapon in the slot
+std::string WeaponSlot::getWeapon()
 {
     m_file.open(m_fileName);
 
@@ -120,7 +119,7 @@ std::string WeaponSlot::getGun()
         // if slot address is less than or equal to 0 it's definitely invalid, report an error and back out
         if (m_filePosition <= 0)
         {
-            QMessageBox msgBox(QMessageBox::Critical, "Error", "Error: Invalid file address passed to assignGun().");
+            QMessageBox msgBox(QMessageBox::Critical, "Error", "Error: Invalid file address passed to getWeapon().");
             msgBox.exec();
             m_file.close();
             return "Error";
@@ -132,10 +131,10 @@ std::string WeaponSlot::getGun()
         // build a string one character at a time
         // there will be a valid iteration where the current character is
         // 'n' and the character before that is 'p'.  This is because all
-        // the weapons that can be in these slots end in "_wpn".  Once
+        // the weapons that can be in these slots end in "_wpn".
         // "pn" servers as a terminator.
         // the loop can technically run until the string is as long as the
-        // slot itself.
+        // slot itself + 1.
         char currentChar, previousChar;
         for (int i{1}; i < m_length + 1; ++i, previousChar = currentChar)
         {
@@ -158,7 +157,7 @@ std::string WeaponSlot::getGun()
 
     // something went wrong with the file stream
     // PROBABLY NEED BETTER ERROR MESSAGE HERE, MORE SPECIFIC
-    QMessageBox msgBox(QMessageBox::Critical, "Error", "Error while loading gun.");
+    QMessageBox msgBox(QMessageBox::Critical, "Error", "Error while loading weapon.");
     msgBox.exec();
     return "Error";
 }
