@@ -10,6 +10,7 @@
 #include <QTextStream>
 #include <QMessageBox>
 
+// *** DON'T FORGET TO TAKE THE FILE PATH OUT BEFORE RELEASE ***
 const std::string sasGame("C:\\Program Files (x86)\\Konami\\The Regiment\\system\\SASGame.u");
 const std::string sasChars("C:\\Program Files (x86)\\Konami\\The Regiment\\system\\SASChars.u");
 
@@ -84,7 +85,7 @@ LoadoutTool::LoadoutTool(QWidget *parent) :
 
     // *** Shared Equipment ***
 
-    ui->cbDefaultmp5->setCurrentIndexFromWeapon(defaultMP5);
+    ui->cbDefaultMp5->setCurrentIndexFromWeapon(defaultMP5);
     ui->cbKnife->setCurrentIndexFromWeapon(defaultKnife);
 
     ui->cbP226->setCurrentIndexFromWeapon(defaultP226);
@@ -362,23 +363,77 @@ void LoadoutTool::on_cbDMp5s_activated(int index)
 
 void LoadoutTool::on_pbTApply_clicked()
 {
-    std::fstream tempStream (sasChars);
-    //assignWeapon(tempStream, defaultBDA.filePosition, defaultBDA.length, none);
+    const terroristWeaponSlot *addressesToReplace{nullptr};
+    int addressesToReplaceSize{0};
+    const std::string *potentialReplacements{nullptr};
+    int potentialReplacementsSize{0};
+
+    switch(ui->cbTReplace->currentIndex())
+    {
+    case 0:
+        addressesToReplace = terrorSlotBoth;
+        addressesToReplaceSize = terrorSlotBothSize;
+        break;
+    case 1:
+        addressesToReplace = terrorSlotPrimaries;
+        addressesToReplaceSize = terrorSlotPrimariesSize;
+        break;
+    case 2:
+        addressesToReplace = terrorSlotSecondaries;
+        addressesToReplaceSize = terrorSlotSecondariesSize;
+        break;
+    }
+
+    switch(ui->cbTReplaceWith->currentIndex())
+    {
+    case 0:
+        potentialReplacements = terrorBoth;
+        potentialReplacementsSize = terrorBothSize;
+        break;
+    case 1:
+        potentialReplacements = terrorPrimaries;
+        potentialReplacementsSize = terrorPrimariesSize;
+        break;
+    case 2:
+        potentialReplacements = terrorSecondaries;
+        potentialReplacementsSize = terrorSecondariesSize;
+        break;
+    }
+
+    std::fstream file (sasChars);
+    //assignWeapon(tempStream, defaultBDA.filePosition, defaultBDA.length, getRandomNumber(0, 3));
     //assignWeapon(tempStream, defaultMolotov.filePosition, defaultMolotov.length, none);
     //tempStream.close();
     //tempStream.open(sasChars);
 
+    int randomNumber{0};
     AssignmentResult lastResult;
-    for (int i{0}; i < terrorists.size();)
+    for (int i{0}; i < addressesToReplaceSize;)
     {
-        lastResult = assignWeapon(tempStream, terrorists[i].filePosition, terrorists[i].length, none);
-
-        if (lastResult == AssignmentResult::SUCCESS)
+        QTextStream(stdout) << "iteration: " << i << " " << hex << addressesToReplace[i].filePosition << " " << addressesToReplace[i].length << '\n';
+        if (potentialReplacements == terrorSecondaries && addressesToReplace[i].length < 20) // with pistols only as replacements, if the slot is too small for the smallest pistol then set that slot to have no weapon
         {
-            QTextStream(stdout) << "iteration: " << i << " " << hex << terrorists[i].filePosition << " " << terrorists[i].length << '\n';
-            //++i;
+            lastResult = assignWeapon(file, addressesToReplace[i].filePosition, addressesToReplace[i].length, none);
+            if (lastResult == AssignmentResult::SUCCESS)
+            {
+                ++i;
+            }
         }
-        ++i; // for testing
+
+        else
+        {
+            randomNumber = getRandomNumber(0, potentialReplacementsSize - 1);
+            lastResult = assignWeapon(file, addressesToReplace[i].filePosition, addressesToReplace[i].length, potentialReplacements[randomNumber]);
+
+
+            if (lastResult == AssignmentResult::SUCCESS)
+            {
+                //QTextStream(stdout) << "iteration: " << i << " " << hex << addressesToReplace[i].filePosition << " " << addressesToReplace[i].length << '\n';
+                ++i;
+            }
+            //++i; // for testing
+        }
+
 
 
         /*
@@ -398,6 +453,22 @@ void LoadoutTool::on_pbTApply_clicked()
         */
     }
 
+    // replacing secondary weapon slot
+    if (addressesToReplace == terrorSlotBoth || addressesToReplace == terrorSlotSecondaries)
+    {
+        // picking from secondaries only
+        if (potentialReplacements == terrorSecondaries)
+        {
+            assignWeapon(file, defaultBDA.filePosition, defaultBDA.length, potentialReplacements[getRandomNumber(0, 3)]); // any of the 4 secondaries will fit in this slot
+        }
+        // picking from primaries and secondaries
+        else if (potentialReplacements == terrorBoth)
+        {
+            assignWeapon(file, defaultBDA.filePosition, defaultBDA.length, potentialReplacements[getRandomNumber(0, 18)]); // anything with a lenght of 27 or less will fit in this slot (items 0-18 in
+        }
+
+    }
+
     /*
     for (auto &element : terrorists)
     {
@@ -406,5 +477,5 @@ void LoadoutTool::on_pbTApply_clicked()
     }
     */
 
-    tempStream.close();
+    file.close();
 }
