@@ -63,6 +63,8 @@ AssignmentResult assignWeapon(std::fstream &file, int slotAddress, int slotLengt
     return AssignmentResult::FILESTREAMERROR;
 }
 
+//void randomizeWeaponArray(const std::fstream &file, const )
+
 /*
 
 // takes a gun slot and fills it with a specific gun
