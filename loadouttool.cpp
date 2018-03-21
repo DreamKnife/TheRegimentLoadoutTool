@@ -69,6 +69,11 @@ WeaponSlot dMp5sdlss(sasChars, 0x012084, 28);
 WeaponSlot dMp5lss(sasChars, 0x012378, 26);
 WeaponSlot dMp5s(sasChars, 0x0124E1, 26);
 
+// *** Terrorists Shared Equipment ***
+
+WeaponSlot tFragT(sasChars, 0x7103, 31); // SASWeapons.L2A2_TerrGrenade_Wpn
+WeaponSlot tMolotov(sasChars, 0x7124, 31); // SASWeapons.Molotov_Cocktail_Wpn
+
 // SASGame.u
 //WeaponSlot defaultMP5("SASGame.u", 0x030E95, 21);
 //WeaponSlot defaultMP5("C:\\Program Files (x86)\\Konami\\The Regiment\\system\\SASGame.u", 0x030E95, 21);
@@ -137,6 +142,34 @@ LoadoutTool::LoadoutTool(QWidget *parent) :
         ui->cbDMp5sdlssSocom->setCurrentIndexFromWeapon(dMp5sdlssSocom);
     ui->cbDMp5lss->setCurrentIndexFromWeapon(dMp5lss);
     ui->cbDMp5s->setCurrentIndexFromWeapon(dMp5s);
+
+    // *** Terrorists Shared Equipment ***
+
+    if (tFragT.getWeapon() == fragt)
+    {
+        ui->cbTFrag->setCurrentIndex(25);
+    }
+    else if (tFragT.getWeapon() == molotov)
+    {
+        ui->cbTFrag->setCurrentIndex(26);
+    }
+    else
+    {
+        ui->cbTFrag->setCurrentIndexFromWeapon(tFragT);
+    }
+
+    if (tMolotov.getWeapon() == fragt)
+    {
+        ui->cbTMolotov->setCurrentIndex(25);
+    }
+    else if (tMolotov.getWeapon() == molotov)
+    {
+        ui->cbTMolotov->setCurrentIndex(26);
+    }
+    else
+    {
+        ui->cbTMolotov->setCurrentIndexFromWeapon(tMolotov);
+    }
 
 }
 
@@ -400,11 +433,8 @@ void LoadoutTool::on_pbTApply_clicked()
         break;
     }
 
-    std::fstream file (sasChars);
-    //assignWeapon(tempStream, defaultBDA.filePosition, defaultBDA.length, getRandomNumber(0, 3));
-    //assignWeapon(tempStream, defaultMolotov.filePosition, defaultMolotov.length, none);
-    //tempStream.close();
-    //tempStream.open(sasChars);
+    std::fstream fileGame (sasGame);
+    std::fstream fileChars (sasChars);
 
     int randomNumber{0};
     AssignmentResult lastResult;
@@ -413,7 +443,7 @@ void LoadoutTool::on_pbTApply_clicked()
         QTextStream(stdout) << "iteration: " << i << " " << hex << addressesToReplace[i].filePosition << " " << addressesToReplace[i].length << '\n';
         if (potentialReplacements == terrorSecondaries && addressesToReplace[i].length < 20) // with pistols only as replacements, if the slot is too small for the smallest pistol then set that slot to have no weapon
         {
-            lastResult = assignWeapon(file, addressesToReplace[i].filePosition, addressesToReplace[i].length, none);
+            lastResult = assignWeapon(fileChars, addressesToReplace[i].filePosition, addressesToReplace[i].length, none);
             if (lastResult == AssignmentResult::SUCCESS)
             {
                 ++i;
@@ -423,7 +453,7 @@ void LoadoutTool::on_pbTApply_clicked()
         else
         {
             randomNumber = getRandomNumber(0, potentialReplacementsSize - 1);
-            lastResult = assignWeapon(file, addressesToReplace[i].filePosition, addressesToReplace[i].length, potentialReplacements[randomNumber]);
+            lastResult = assignWeapon(fileChars, addressesToReplace[i].filePosition, addressesToReplace[i].length, potentialReplacements[randomNumber]);
 
 
             if (lastResult == AssignmentResult::SUCCESS)
@@ -433,49 +463,109 @@ void LoadoutTool::on_pbTApply_clicked()
             }
             //++i; // for testing
         }
-
-
-
-        /*
-        switch (lastResult)
-        {
-        case AssignmentResult::SUCCESS:
-            QTextStream(stdout) << "iteration: " << i << " " << hex << terrorists[i].filePosition << " " << terrorists[i].length << '\n';
-            ++i;
-            break;
-        case AssignmentResult::INVALIDADDRESS:
-            break;
-        case AssignmentResult::VALUETOOLARGE:
-            break;
-        case AssignmentResult::FILESTREAMERROR:
-            break;
-        }
-        */
     }
 
+    // handle default ak47 seperately
+    // replacing primary weapon slot
+    if (addressesToReplace == terrorSlotBoth || addressesToReplace == terrorSlotPrimaries)
+    {
+        // picking from secondaries only
+        if (potentialReplacements == terrorSecondaries)
+        {
+            assignWeapon(fileGame, defaultAK47.filePosition, defaultAK47.length, none); // none of the 4 secondaries will fit in this slot so set it to be empty / no weapon
+        }
+        // picking from primaries and secondaries
+        else if (potentialReplacements == terrorBoth)
+        {
+            assignWeapon(fileGame, defaultAK47.filePosition, defaultAK47.length, potentialReplacements[getRandomNumber(0, 3)]); // anything with a length of 19 or less will fit in this slot
+        }
+        // picking from primaries only
+        else if (potentialReplacements == terrorPrimaries)
+        {
+            assignWeapon(fileGame, defaultAK47.filePosition, defaultAK47.length, potentialReplacements[getRandomNumber(0, 3)]); // anything with a length of 19 or less will fit in this slot
+        }
+
+    }
+
+    // handle default browning bda seperately
     // replacing secondary weapon slot
     if (addressesToReplace == terrorSlotBoth || addressesToReplace == terrorSlotSecondaries)
     {
         // picking from secondaries only
         if (potentialReplacements == terrorSecondaries)
         {
-            assignWeapon(file, defaultBDA.filePosition, defaultBDA.length, potentialReplacements[getRandomNumber(0, 3)]); // any of the 4 secondaries will fit in this slot
+            assignWeapon(fileChars, defaultBDA.filePosition, defaultBDA.length, potentialReplacements[getRandomNumber(0, 3)]); // any of the 4 secondaries will fit in this slot
         }
         // picking from primaries and secondaries
         else if (potentialReplacements == terrorBoth)
         {
-            assignWeapon(file, defaultBDA.filePosition, defaultBDA.length, potentialReplacements[getRandomNumber(0, 18)]); // anything with a lenght of 27 or less will fit in this slot (items 0-18 in
+            assignWeapon(fileChars, defaultBDA.filePosition, defaultBDA.length, potentialReplacements[getRandomNumber(0, 18)]); // anything with a length of 27 or less will fit in this slot
+        }
+        // picking from primaries only
+        else if (potentialReplacements == terrorPrimaries)
+        {
+            assignWeapon(fileChars, defaultBDA.filePosition, defaultBDA.length, potentialReplacements[getRandomNumber(0, 14)]); // anything with a length of 27 or less will fit in this slot
         }
 
     }
 
-    /*
-    for (auto &element : terrorists)
-    {
-        //QTextStream(stdout) << "iteration" << '\n';
-        assignWeapon(tempStream, element.filePosition, element.length, none);
-    }
-    */
+    fileGame.close();
+    fileChars.close();
 
-    file.close();
+    QMessageBox msgBox(QMessageBox::NoIcon, "Done", "Randomization complete.");
+    msgBox.exec();
+}
+
+void LoadoutTool::on_pbTClear_clicked()
+{
+    std::fstream fileGame (sasGame);
+    std::fstream fileChars (sasChars);
+
+    for (auto &element : terrorSlotBoth)
+    {
+        assignWeapon(fileChars, element.filePosition, element.length, none);
+    }
+
+    assignWeapon(fileGame, defaultAK47.filePosition, defaultAK47.length, none);
+    assignWeapon(fileChars, defaultBDA.filePosition, defaultBDA.length, none);
+
+    fileGame.close();
+    fileChars.close();
+
+    QMessageBox msgBox(QMessageBox::NoIcon, "Done", "All terrorists primary and secondary weapons set to none.");
+    msgBox.exec();
+}
+
+// *** Terrorists Shared Equipment ***
+
+void LoadoutTool::on_cbTFrag_activated(int index)
+{
+    if (index == 25)
+    {
+        tFragT.assignWeapon(fragt);
+    }
+    else if (index == 26)
+    {
+        tFragT.assignWeapon(molotov);
+    }
+    else
+    {
+        tFragT.assignWeapon(weapons[index]);
+    }
+}
+
+void LoadoutTool::on_cbTMolotov_activated(int index)
+{
+    if (index == 25)
+    {
+        tMolotov.assignWeapon(fragt);
+    }
+    else if (index == 26)
+    {
+        tMolotov.assignWeapon(molotov);
+    }
+    else
+    {
+        tMolotov.assignWeapon(weapons[index]);
+    }
 }
