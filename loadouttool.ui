@@ -156,7 +156,7 @@
      <item>
       <widget class="QComboBoxCustom" name="cbP226">
        <property name="toolTip">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- player and 3 team members in every mission.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- player and 3 team members in every mission except Metro 2 and Parliament 2.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
        <item>
         <property name="text">
@@ -4289,6 +4289,354 @@
      <item>
       <property name="text">
        <string>Secondaries only</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QPushButton" name="pbTClear">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>200</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Clear</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_7">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>310</y>
+      <width>191</width>
+      <height>151</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Terrorists Shared Equipment</string>
+    </property>
+    <widget class="QLabel" name="label_42">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>161</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>L2A2 Frag Grenade (terrorist)</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbTFrag">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>40</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- every terrorist in every mission.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BDA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>L2A2 Frag Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>L2A2 Frag Grenade (terrorists)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Molotov Cocktail (not reccommended)</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QLabel" name="label_43">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>70</y>
+       <width>151</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Molotov Cocktail</string>
+     </property>
+    </widget>
+    <widget class="QComboBoxCustom" name="cbTMolotov">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>90</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- every terrorist in every mission.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <item>
+      <property name="text">
+       <string>None</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M60</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Uzi</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-47</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M4A1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>AK-74</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G3SG1</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MAC-11</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SOCOM</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 4)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M1100 (slot 1)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>SIGSWAT</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>P226</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Steyr AUG</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>M9</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Combat Knife</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>G60 Flash Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5 LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>BDA</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5K LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>L2A2 Frag Grenade</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>MP5SD LS S</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>L2A2 Frag Grenade (terrorists)</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>Molotov Cocktail (not reccommended)</string>
       </property>
      </item>
     </widget>

@@ -96,6 +96,12 @@ private slots:
 
     void on_pbTApply_clicked();
 
+    void on_pbTClear_clicked();
+
+    void on_cbTFrag_activated(int index);
+
+    void on_cbTMolotov_activated(int index);
+
 private:
     Ui::LoadoutTool *ui;
 };

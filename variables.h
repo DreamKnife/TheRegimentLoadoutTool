@@ -30,6 +30,10 @@ const std::string frag{"SASWeapons.L2A2_Grenade_Wpn"}; // 27
 const std::string mp5sdlss{"SASWeapons.HK_MP5SD_LS_S_Wpn"}; // 28
 const std::string gas{"SASWeapons.L13A1_Gas_Grenade_Wpn"}; // 32
 
+// for terrorists
+const std::string fragt{"SASWeapons.L2A2_TerrGrenade_Wpn"}; // 31
+const std::string molotov{"SASWeapons.Molotov_Cocktail_Wpn"}; // 31
+
 // Note: do not change the order of these as the comboboxes are mapped to this order.
 const std::array<std::string, 26> weapons{
     none, m60, uzi, ak47, m4a1, ak74, g3sg1, mac11, socom, m1100, mp5,
@@ -81,8 +85,6 @@ const terroristWeaponSlot defaultAK47 {0x03126E, 19};
 
 // SASChars.u
 const terroristWeaponSlot defaultBDA {0x70E2, 27};
-const terroristWeaponSlot defaultFragT {0x7103, 31}; // SASWeapons.L2A2_TerrGrenade_Wpn
-const terroristWeaponSlot defaultMolotov {0x7124, 31}; // SASWeapons.Molotov_Cocktail_Wpn
 
 // the weapon slots for terrorists. these are sets of two - the address of the position in the file
 // and the length of the entry
@@ -103,8 +105,9 @@ const terroristWeaponSlot terrorSlotPrimaries[terrorSlotPrimariesSize] {
     0x01859A, 24, 0x01887E, 18, 0x0189E3, 21, 0x018B67, 20, 0x018D0F, 18, 0x01902B, 24, 0x0191C1, 18, 0x019351, 20, 0x0194E3, 20 // metro (9)
 };
 
-const int terrorSlotSecondariesSize{30};
+const int terrorSlotSecondariesSize{31};
 const terroristWeaponSlot terrorSlotSecondaries[terrorSlotSecondariesSize] {
+    0xDAC7, 22, // sig pistol used by 1 enemy at end of farm 2 (1)
     0x014175, 27, 0x01446E, 27, 0x01476A, 27, 0x014A64, 27, 0x014D5C, 27, // scripted embassy (5)
     0x015240, 25, 0x015A1F, 22, 0x015D4E, 20, // embassy (3)
     0x0162F9, 25, 0x016487, 25, 0x016C0F, 25, 0x016DBB, 20, 0x016F5B, 25, 0x0170E6, 25, // farm (6)
@@ -113,7 +116,7 @@ const terroristWeaponSlot terrorSlotSecondaries[terrorSlotSecondariesSize] {
 };
 
 // terrorists primary slots plus secondary slots in one array
-const int terrorSlotBothSize{64};
+const int terrorSlotBothSize{65};
 const terroristWeaponSlot terrorSlotBoth[terrorSlotBothSize] {
     0x01415C, 19, 0x014455, 19, 0x01474E, 22, 0x014A4A, 20, 0x014D44, 18, // scripted embassy (5)
     0x0153E0, 18, 0x01556D, 20, 0x0156EB, 18, 0x015BAD, 20, 0x015EEB, 21, // embassy (5)
@@ -121,6 +124,7 @@ const terroristWeaponSlot terrorSlotBoth[terrorSlotBothSize] {
     0x01754B, 22, 0x0176D4, 20, 0x01783C, 24, 0x0179CC, 19, 0x017B3B, 21, 0x017CC9, 20, 0x017E48, 18, 0x017FE4, 18, // parliment (8)
     0x01859A, 24, 0x01887E, 18, 0x0189E3, 21, 0x018B67, 20, 0x018D0F, 18, 0x01902B, 24, 0x0191C1, 18, 0x019351, 20, 0x0194E3, 20, // metro (9)
 
+    0xDAC7, 22, // sig pistol used by 1 enemy at end of farm 2 (1)
     0x014175, 27, 0x01446E, 27, 0x01476A, 27, 0x014A64, 27, 0x014D5C, 27, // scripted embassy (5)
     0x015240, 25, 0x015A1F, 22, 0x015D4E, 20, // embassy (3)
     0x0162F9, 25, 0x016487, 25, 0x016C0F, 25, 0x016DBB, 20, 0x016F5B, 25, 0x0170E6, 25, // farm (6)
