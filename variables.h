@@ -34,6 +34,10 @@ const std::string gas{"SASWeapons.L13A1_Gas_Grenade_Wpn"}; // 32
 const std::string fragt{"SASWeapons.L2A2_TerrGrenade_Wpn"}; // 31
 const std::string molotov{"SASWeapons.Molotov_Cocktail_Wpn"}; // 31
 
+// for training
+const std::string mp5training{"SASTraining.HK_MP5_T_Wpn"}; // 24
+const std::string mp5empty{"SASWeapons.HK_MP5_Blank_Empty_Wpn"}; // 33
+
 // Note: do not change the order of these as the comboboxes are mapped to this order.
 const std::array<std::string, 26> weapons{
     none, m60, uzi, ak47, m4a1, ak74, g3sg1, mac11, socom, m1100, mp5,

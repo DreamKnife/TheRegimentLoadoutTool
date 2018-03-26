@@ -1,4 +1,5 @@
 #include "qcomboboxcustom.h"
+#include <QCoreApplication>
 
 QComboBoxCustom::QComboBoxCustom(QWidget *parent) : QComboBox(parent)
 {

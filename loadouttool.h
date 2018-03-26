@@ -16,7 +16,7 @@ public:
     ~LoadoutTool();
 
 private slots:
-    void on_cbDefaultmp5_activated(int index);
+    void on_cbDefaultMp5_activated(int index);
 
     void on_cbKnife_activated(int index);
 
@@ -101,6 +101,14 @@ private slots:
     void on_cbTFrag_activated(int index);
 
     void on_cbTMolotov_activated(int index);
+
+    void on_cbMp5Empty_activated(int index);
+
+    void on_cbMp5Training_activated(int index);
+
+    void on_cbMp5Training2_activated(int index);
+
+    void on_cbMp5Training3_activated(int index);
 
 private:
     Ui::LoadoutTool *ui;

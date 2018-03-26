@@ -1,5 +1,6 @@
 #include "loadouttool.h"
 #include <QApplication>
+#include <QMessageBox>
 
 #include <iostream>
 #include <fstream>
@@ -12,11 +13,34 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    LoadoutTool w;
-    w.show();
+    std::fstream sasGame("C:\\Program Files (x86)\\Konami\\The Regiment\\system\\SASGame.u");
+    std::fstream sasChars("C:\\Program Files (x86)\\Konami\\The Regiment\\system\\SASChars.u");
 
-    srand(static_cast<unsigned int>(time(0))); // set initial seed value to system clock for random numbers
-    getRandomNumber(0, 3); // call getRandomNumber() once and throw away because the first call doesn't seem to come out random
+    if (sasGame.good() && sasChars.good())
+    {
+        LoadoutTool w;
+        w.show();
+
+        srand(static_cast<unsigned int>(time(0))); // set initial seed value to system clock for random numbers
+        getRandomNumber(0, 3); // call getRandomNumber() once and throw away because the first call doesn't seem to come out random
+        return a.exec();
+    }
+    else
+    {
+        if (!sasGame.good())
+        {
+            QMessageBox msgBox(QMessageBox::Critical, "Error", "Error opening SASGame.u.");
+            msgBox.exec();
+        }
+        if (!sasChars.good())
+        {
+            QMessageBox msgBox(QMessageBox::Critical, "Error", "Error opening SASChars.u.");
+            msgBox.exec();
+        }
+        sasGame.close();
+        sasChars.close();
+        return 1;
+    }
 
     //std::fstream sasGame("C:\\Program Files (x86)\\Konami\\The Regiment\\system\\SASGame.u");
     //std::fstream sasChars("C:\\Program Files (x86)\\Konami\\The Regiment\\system\\SASChars.u");
@@ -74,5 +98,5 @@ int main(int argc, char *argv[])
     }
     */
 
-    return a.exec(); //needs to be last line of main()
+
 }

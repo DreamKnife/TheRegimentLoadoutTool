@@ -16,7 +16,7 @@ const std::string sasChars("C:\\Program Files (x86)\\Konami\\The Regiment\\syste
 
 // *** Shared Equipment ***
 
-WeaponSlot defaultMP5(sasGame, 0x030E95, 21);
+WeaponSlot defaultMp5(sasGame, 0x030E95, 21);
 WeaponSlot defaultKnife(sasGame, 0x030ED3, 26);
 
 WeaponSlot defaultP226(sasChars, 0x731F, 22);
@@ -71,8 +71,15 @@ WeaponSlot dMp5s(sasChars, 0x0124E1, 26);
 
 // *** Terrorists Shared Equipment ***
 
-WeaponSlot tFragT(sasChars, 0x7103, 31); // SASWeapons.L2A2_TerrGrenade_Wpn
-WeaponSlot tMolotov(sasChars, 0x7124, 31); // SASWeapons.Molotov_Cocktail_Wpn
+WeaponSlot tFragT(sasChars, 0x7103, 31);
+WeaponSlot tMolotov(sasChars, 0x7124, 31);
+
+// *** Training ***
+
+WeaponSlot trainingMp5(sasChars, 0xEFD6, 24);
+WeaponSlot trainingMp52(sasChars, 0xF3CD, 24);
+WeaponSlot trainingMp5Empty(sasChars, 0xF7DE, 33);
+WeaponSlot trainingMp5Wingman(sasChars, 0x0107FD, 24);
 
 // SASGame.u
 //WeaponSlot defaultMP5("SASGame.u", 0x030E95, 21);
@@ -90,9 +97,8 @@ LoadoutTool::LoadoutTool(QWidget *parent) :
 
     // *** Shared Equipment ***
 
-    ui->cbDefaultMp5->setCurrentIndexFromWeapon(defaultMP5);
+    ui->cbDefaultMp5->setCurrentIndexFromWeapon(defaultMp5);
     ui->cbKnife->setCurrentIndexFromWeapon(defaultKnife);
-
     ui->cbP226->setCurrentIndexFromWeapon(defaultP226);
     ui->cbM1100->setCurrentIndexFromWeapon(defaultM1100);
     ui->cbFlash->setCurrentIndexFromWeapon(defaultFlash);
@@ -171,6 +177,60 @@ LoadoutTool::LoadoutTool(QWidget *parent) :
         ui->cbTMolotov->setCurrentIndexFromWeapon(tMolotov);
     }
 
+    // *** Training ***
+
+    if (trainingMp5Empty.getWeapon() == mp5empty)
+    {
+        ui->cbMp5Empty->setCurrentIndex(26);
+    }
+    else
+    {
+        ui->cbMp5Empty->setCurrentIndexFromWeapon(trainingMp5Empty);
+    }
+
+    if (trainingMp5.getWeapon() == mp5training)
+    {
+        ui->cbMp5Training->setCurrentIndex(17);
+    }
+    else
+    {
+        ui->cbMp5Training->setCurrentIndexFromWeapon(trainingMp5);
+    }
+
+    if (trainingMp52.getWeapon() == mp5training)
+    {
+        ui->cbMp5Training2->setCurrentIndex(17);
+    }
+    else
+    {
+        ui->cbMp5Training2->setCurrentIndexFromWeapon(trainingMp52);
+    }
+
+    if (trainingMp5Wingman.getWeapon() == mp5training)
+    {
+        ui->cbMp5Training3->setCurrentIndex(17);
+    }
+    else
+    {
+        ui->cbMp5Training3->setCurrentIndexFromWeapon(trainingMp5Wingman);
+    }
+
+    // hide the unused boxes
+    ui->label_17->hide();
+    ui->cbBMp5sd->hide();
+    ui->label_18->hide();
+    ui->cbBMp5sdSocom->hide();
+    ui->label_23->hide();
+    ui->cbCMp5klss->hide();
+    ui->label_24->hide();
+    ui->cbCMp5sd->hide();
+    ui->label_25->hide();
+    ui->cbCMp5sdSocom->hide();
+    ui->label_31->hide();
+    ui->cbDMp5sd->hide();
+    ui->label_32->hide();
+    ui->cbDMp5sdSocom->hide();
+
 }
 
 LoadoutTool::~LoadoutTool()
@@ -183,13 +243,13 @@ LoadoutTool::~LoadoutTool()
 
 }
 
-void LoadoutTool::on_cbDefaultmp5_activated(int index)
+void LoadoutTool::on_cbDefaultMp5_activated(int index)
 {
     //QTextStream(stdout) << "index " << index << " selected" << endl;
     //QMessageBox msgBox(QMessageBox::Information, "Clicked", "on_comboBox_currentIndexChanged");
     //msgBox.exec();
 
-    defaultMP5.assignWeapon(weapons[index]);
+    defaultMp5.assignWeapon(weapons[index]);
 }
 
 // *** Shared Equipment ***
@@ -374,7 +434,7 @@ void LoadoutTool::on_cbDMp5sdSocom_activated(int index)
 
 void LoadoutTool::on_cbDMp5sdlss_activated(int index)
 {
-    cMp5sdlss.assignWeapon(weapons[index]);
+    dMp5sdlss.assignWeapon(weapons[index]);
 }
 
 void LoadoutTool::on_cbDMp5sdlssSocom_activated(int index)
@@ -567,5 +627,55 @@ void LoadoutTool::on_cbTMolotov_activated(int index)
     else
     {
         tMolotov.assignWeapon(weapons[index]);
+    }
+}
+
+// *** Training ***
+
+void LoadoutTool::on_cbMp5Empty_activated(int index)
+{
+    if (index == 26)
+    {
+        trainingMp5Empty.assignWeapon(mp5empty);
+    }
+    else
+    {
+        trainingMp5Empty.assignWeapon(weapons[index]);
+    }
+}
+
+void LoadoutTool::on_cbMp5Training_activated(int index)
+{
+    if (index == 17)
+    {
+        trainingMp5.assignWeapon(mp5training);
+    }
+    else
+    {
+        trainingMp5.assignWeapon(weapons[index]);
+    }
+}
+
+void LoadoutTool::on_cbMp5Training2_activated(int index)
+{
+    if (index == 17)
+    {
+        trainingMp52.assignWeapon(mp5training);
+    }
+    else
+    {
+        trainingMp52.assignWeapon(weapons[index]);
+    }
+}
+
+void LoadoutTool::on_cbMp5Training3_activated(int index)
+{
+    if (index == 17)
+    {
+        trainingMp5Wingman.assignWeapon(mp5training);
+    }
+    else
+    {
+        trainingMp5Wingman.assignWeapon(weapons[index]);
     }
 }
