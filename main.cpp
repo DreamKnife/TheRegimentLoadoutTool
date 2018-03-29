@@ -6,18 +6,21 @@
 #include <fstream>
 #include <cstdlib> // for rand() and srand()
 #include <ctime> // for time()
-//#include "variables.h"
+#include "variables.h"
 #include "functions.h"
 #include <conio.h>
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    std::fstream sasGame("C:\\Program Files (x86)\\Konami\\The Regiment\\system\\SASGame.u");
-    std::fstream sasChars("C:\\Program Files (x86)\\Konami\\The Regiment\\system\\SASChars.u");
+    std::fstream fileSasGame(sasGame);
+    std::fstream fileSasChars(sasChars);
 
-    if (sasGame.good() && sasChars.good())
+    if (fileSasGame.good() && fileSasChars.good())
     {
+        fileSasGame.close();
+        fileSasChars.close();
+
         LoadoutTool w;
         w.show();
 
@@ -27,18 +30,18 @@ int main(int argc, char *argv[])
     }
     else
     {
-        if (!sasGame.good())
+        if (!fileSasGame.good())
         {
             QMessageBox msgBox(QMessageBox::Critical, "Error", "Error opening SASGame.u.");
             msgBox.exec();
         }
-        if (!sasChars.good())
+        if (!fileSasChars.good())
         {
             QMessageBox msgBox(QMessageBox::Critical, "Error", "Error opening SASChars.u.");
             msgBox.exec();
         }
-        sasGame.close();
-        sasChars.close();
+        fileSasGame.close();
+        fileSasChars.close();
         return 1;
     }
 

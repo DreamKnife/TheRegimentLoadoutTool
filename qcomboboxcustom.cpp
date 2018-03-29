@@ -1,17 +1,14 @@
 #include "qcomboboxcustom.h"
 #include <QCoreApplication>
 
+#include "variables.h"
+
 QComboBoxCustom::QComboBoxCustom(QWidget *parent) : QComboBox(parent)
 {
-    //QMessageBox msgBox(QMessageBox::Information, "Open", "QComboBoxCustom()");
-    //msgBox.exec();
-
 }
 
 QComboBoxCustom::~QComboBoxCustom()
 {
-    //QMessageBox msgBox(QMessageBox::Information, "Close", "~QComboBoxCustom()");
-    //msgBox.exec();
 }
 
 void QComboBoxCustom::setCurrentIndexFromWeapon(WeaponSlot &slot)
@@ -20,6 +17,8 @@ void QComboBoxCustom::setCurrentIndexFromWeapon(WeaponSlot &slot)
     {
         if (slot.getWeapon() == weapons[i])
             this->setCurrentIndex(i);
+        if (slot.getWeapon() == "Error")
+            break;
     }
 }
 

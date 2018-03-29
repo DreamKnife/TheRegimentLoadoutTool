@@ -1,9 +1,6 @@
 #include "functions.h"
 #include <string>
-#include <cstdlib> // for rand() and srand() and exit()
-#include <ctime> // for time()
-//#include <cstdlib>
-#include <iostream>
+#include <cstdlib> // for rand() and srand()
 #include <fstream>
 #include <QMessageBox>
 
@@ -57,51 +54,7 @@ AssignmentResult assignWeapon(std::fstream &file, int slotAddress, int slotLengt
     }
 
     // something went wrong with the file stream
-    // PROBABLY NEED BETTER ERROR MESSAGE HERE, MORE SPECIFIC
-    QMessageBox msgBox(QMessageBox::Critical, "Error", "Error while assigning weapon.");
+    QMessageBox msgBox(QMessageBox::Critical, "Error", "File stream failure in assignWeapon().");
     msgBox.exec();
     return AssignmentResult::FILESTREAMERROR;
 }
-
-//void randomizeWeaponArray(const std::fstream &file, const )
-
-/*
-
-// takes a gun slot and fills it with a specific gun
-void assignGun (std::fstream &file, long slotAddress, short slotLength, const std::string &weapon)
-{
-    // if slot address is less than or equal to 0 it's definitely invalid, report an error and back out
-    if (slotAddress <= 0)
-    {
-        //std::cerr << "Error: invalid slot address passed to assignGun()" << file << '\n';
-        return;
-    }
-
-    // if the weapon passed in is too big for the slot print error and return
-    if (weapon.length() > slotLength)
-    {
-        // NEED ERROR MESSAGE HERE
-        return;
-    }
-
-    file.seekg(slotAddress, std::ios::beg);
-    std::string tempWeapon{weapon};
-
-    short lengthDifference{slotLength - tempWeapon.length()}; // calculate length difference
-
-    // add empty spaces to the weapon as many times as needed to match the length
-    // of the slot it's going to fill
-    for (short i{0}; i < lengthDifference; ++i)
-        {
-            tempWeapon.push_back(0x00);
-        }
-
-    file << tempWeapon; // write the prepared weapon string to the file
-
-    if (!file.good())
-        {
-            //std::cerr << "Error processing" << file << '\n';
-        }
-}
-
-*/
