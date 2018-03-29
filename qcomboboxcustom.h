@@ -2,9 +2,7 @@
 #define QCOMBOBOXCUSTOM_H
 
 #include <QComboBox>
-#include <QMessageBox>
 
-#include "variables.h"
 #include "weaponslot.h"
 
 class QComboBoxCustom : public QComboBox

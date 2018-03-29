@@ -5319,7 +5319,7 @@
       </rect>
      </property>
      <property name="toolTip">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- player in all Target Range training levels.&lt;/p&gt;&lt;p&gt;- player in all Wingman training levels.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- player in all Target Range training levels.&lt;/p&gt;&lt;p&gt;- player in all Wingman Training levels.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <item>
       <property name="text">
@@ -5551,7 +5551,7 @@
       </rect>
      </property>
      <property name="toolTip">
-      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- wingman in Wingman training.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Used by:&lt;/p&gt;&lt;p&gt;- wingman in all Wingman Training levels.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
      </property>
      <item>
       <property name="text">
